@@ -7,14 +7,13 @@ module.exports = {
     externals: {
         React: 'react'
     },
-    entry: {
-      [path.resolve(__dirname, "src", "comps", "LandingPage.jsx",),
-      ]
-    },
+    entry: [path.resolve(__dirname, "src", "comps", "Layout.jsx")
+
+    ],
     output: {
         path: path.resolve(__dirname, "src"),
         filename: "bundle.js",
-        publicPath: '/src'
+        publicPath: '/'
     },
     module: {
         rules: [
