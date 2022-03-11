@@ -1,0 +1,51 @@
+#personal-wrapper {
+    display: inline-flex;
+    padding: 0.5rem;
+    justify-content: baseline;
+    align-items: baseline;
+}
+#years-wrapper {
+    border-radius: 100vw;
+    background-color: darkgreen;
+    border: solid 5px green;
+    box-shadow: 0px 0px 8px green;
+}
+#avi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px yellow;
+    background: linear-gradient(96deg, rgba(231,176,67,1) 2%, rgba(235,233,126,1) 39%, rgba(253,245,203,1) 59%, rgba(231,176,67,1) 100%);
+}
+@media screen and (min-width: 481px) {
+    #avi {
+        border-radius: 100vw;
+        width: 21vw;
+        height: 21vw; 
+    }
+    #avi > img {
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        border-radius: 100vw;
+    }
+    #years-wrapper {
+        height: 5vw;
+        width: 5vw;
+        text-align: center;
+        font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #avi {
+        border-radius: 100vw;
+        width: 51vw;
+        height: 51vw; 
+    }
+    #avi > img {
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+        border-radius: 100vw;
+    }
+  }

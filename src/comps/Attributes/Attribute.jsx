@@ -13,6 +13,7 @@
 
 import React, {useState,useEffect} from "react";
 import ReactDOM from "react-dom";
+import './Attributes.css'
 
 function determineRatingColor(rating){
     if(rating>80){
@@ -27,12 +28,12 @@ function determineRatingColor(rating){
 export default function Attribute(props){
     const [attrData, setAttrData] = useState(props.attrData)
     let [attrBgColor, setAttrBgColor] = useState(determineRatingColor(attrData.rating))
-    useEffect(()=>{
+    // useEffect(()=>{
 
-    }, [notifications])
-    useEffect(()=>{
+    // }, [notifications])
+    // useEffect(()=>{
 
-    })
+    // })
     if(attrData.rating < 56) {
         return(
             <React.Fragment>
@@ -46,7 +47,7 @@ export default function Attribute(props){
             <div class='attribute'>
                 <h3>{attrData.name}</h3>
                 <div id={attrBgColor}>
-                    <progress value={attrData.rating} max='99'></progress>
+                    <div style={{width:`${(attrData.rating /99)*100}%`, height:'0.8rem'}}>  </div>
                 </div>
             </div>
         )

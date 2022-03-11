@@ -1,0 +1,20 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Andale Mono;
+    margin: 0;
+    padding:0;
+}
+@media screen and (min-width: 481px) {
+    main {
+        display: inline-flex;
+    }
+    aside {
+      max-width: 25vw;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
