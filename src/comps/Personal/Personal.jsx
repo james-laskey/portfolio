@@ -15,8 +15,11 @@ export default function Personal(props){
 
     return(
         <section id='personal-wrapper'>
-            <div id='avi'><img src={'https://trashymedia.s3.us-east-2.amazonaws.com/assets/profilepic.jpg'}/></div>
-            <YearsHUD/>
+            <h1>James Laskey</h1>
+            <section style={{display:'inline-flex', marginTop:'5%'}}>
+                <div id='avi'><img src={'https://trashymedia.s3.us-east-2.amazonaws.com/assets/profilepic.jpg'}/></div>
+                <YearsHUD/>
+            </section>
         </section>
     )
 }

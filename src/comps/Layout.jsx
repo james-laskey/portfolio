@@ -15,12 +15,12 @@ export default function Layout(props){
     // })
 
     return(
-        <section>
+        <section id='layout-portfolio'>
             <aside>
                 <Personal/>
                 <Attributes/>
             </aside>    
-            <section>
+            <section id='portfolio'>
                 <Portfolio/>
             </section>
         </section>

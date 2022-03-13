@@ -1,31 +1,38 @@
 #personal-wrapper {
-    display: inline-flex;
+    display: grid;
     padding: 0.5rem;
-    justify-content: baseline;
+    justify-content: space-evenly;
     align-items: baseline;
 }
 #years-wrapper {
     border-radius: 100vw;
-    background-color: darkgreen;
-    border: solid 5px green;
+    background-color: #0b290b;
+    border: solid 3px green;
     box-shadow: 0px 0px 8px green;
+    display: grid;
+    align-items: center;
+    font-family: Arial;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 0 0 11px white;
 }
+
 #avi {
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 8px yellow;
-    background: linear-gradient(96deg, rgba(231,176,67,1) 2%, rgba(235,233,126,1) 39%, rgba(253,245,203,1) 59%, rgba(231,176,67,1) 100%);
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 }
 @media screen and (min-width: 481px) {
     #avi {
         border-radius: 100vw;
-        width: 21vw;
-        height: 21vw; 
+        width: 15vw;
+        height: 15vw; 
     }
     #avi > img {
-        width: 20vw;
-        height: 20vw;
+        width: 14.5vw;
+        height: 14.5vw;
         object-fit: cover;
         border-radius: 100vw;
     }
@@ -34,6 +41,11 @@
         width: 5vw;
         text-align: center;
         font-weight: bold;
+    }
+    #years-wrapper > p {
+        font-size: 1vw;
+        margin: 0;
+    
     }
   }
   @media screen and (max-width: 480px) {
@@ -47,5 +59,20 @@
         height: 50vw;
         object-fit: cover;
         border-radius: 100vw;
+    }
+    #personal-wrapper {
+        width: 100%;
+
+    }
+    #years-wrapper {
+        height: 15vw;
+        width: 15vw;
+        text-align: center;
+        font-weight: bold;
+    }
+    #years-wrapper > p {
+        font-size: 5vw;
+        margin: 0;
+    
     }
   }

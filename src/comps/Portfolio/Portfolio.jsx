@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from "react";
 import ReactDOM from "react-dom";
+import Resume from './Resume.jsx'
+import './Portfolio.css';
 
 export default function Portfolio(props){
     const [] = useState()
@@ -12,9 +14,9 @@ export default function Portfolio(props){
     // })
 
     return(
-        <React.Fragment>
-            
-        </React.Fragment>
+        <section>
+            <Resume/>
+        </section>
     )
 }
 

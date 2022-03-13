@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+
 body {
     color: white;
     background-color: black;
@@ -5,16 +7,52 @@ body {
     margin: 0;
     padding:0;
 }
+h1 {
+    margin: 0px;
+    font-family: 'Mr Dafoe', cursive;
+    font-size:3rem;
+    color: #F975F7 ;
+    transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg); /* IE 9 */
+    -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+    -webkit-text-stroke: 0.5px #f008b7;
+    -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+    z-index: 20;
+}
+main {
+    padding: 1rem;
+}
 @media screen and (min-width: 481px) {
     main {
         display: inline-flex;
     }
     aside {
       max-width: 25vw;
+      display: grid;
+    }
+    #portfolio {
+        max-width: 70%;
+        padding: 2rem;
+        overflow-y: scroll;
+    }
+    #layout-portfolio {
+        display: inline-flex;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
     }
   }
   @media screen and (max-width: 480px) {
     body {
-      background-color: lightgreen;
+      
+    }
+    #portfolio {
+        padding: 1rem;
+    }
+    #layout-portfolio {
+        display: grid;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
     }
   }

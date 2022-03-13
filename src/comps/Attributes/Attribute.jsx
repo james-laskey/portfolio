@@ -34,15 +34,7 @@ export default function Attribute(props){
     // useEffect(()=>{
 
     // })
-    if(attrData.rating < 56) {
-        return(
-            <React.Fragment>
-                <div id={attrBgColor}>
-                    <p>{attrData.name}</p>
-                </div>
-            </React.Fragment>
-        )
-    } else {
+
         return(
             <div class='attribute'>
                 <h3>{attrData.name}</h3>
@@ -51,7 +43,6 @@ export default function Attribute(props){
                 </div>
             </div>
         )
-    }
     
 }
 
